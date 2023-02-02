@@ -26,6 +26,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: "curl --request POST --header \"PRIVATE-TOKEN: $GL_TOKEN\" \"http://trwh.bidzaar.com/api/v4/projects/619/pipeline?ref=main\" -L"
+        run: "curl --request POST --header \"PRIVATE-TOKEN: ${{ secrets.GL_TOKEN }} \" \"http://trwh.bidzaar.com/api/v4/projects/619/pipeline?ref=main\" -L"
 
       # Runs a set of commands using the runners shell
